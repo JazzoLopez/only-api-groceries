@@ -9,4 +9,7 @@ router.put('/:barcode',productController.updateOne)
 router.delete('/delete/:barcode',productController.deleteOne)
 
 
+
+
+
 export default router;  

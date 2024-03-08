@@ -14,8 +14,9 @@ productController.getAll = async (req, res) => {
     }
    }).catch(err => {
     res.status(404).json("Error")
-   })
+   }) 
 }
+
 
 productController.getOne = async (req, res) => {
    productDao.getOne(req.params.barcode)
