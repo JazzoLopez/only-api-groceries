@@ -19,7 +19,7 @@ productDao.insertOne = async(product)=>{
 productDao.updateOne = async(barcode, product)=>{
 const updateOne = await Product.findOneAndUpdate({barcode:barcode},product);
 if(updateOne != null){ 
-    return true;
+    return updateOne;
 
 }
 else{

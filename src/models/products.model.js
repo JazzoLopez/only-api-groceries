@@ -13,10 +13,6 @@ const productSchema = new Schema({
     stock: Number,
     expiredDate: String,
     status: Number,
-    testArray:[{
-        type: Array,
-        required:false
-    }]
 }, {
     timestamps: true,
     versionKey: false

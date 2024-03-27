@@ -52,7 +52,7 @@ productController.updateOne = async (req, res) => {
    .then(result => {
       if(result){
 
-         res.status(200).send({"status":"updated"})
+         res.status(200).send({"status":"updated", data : result})
       }
    })
    .catch(err => {
